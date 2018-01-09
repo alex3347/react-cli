@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 
 
 export default class Header extends Component {
+    //为了在constructor中拥有context参数，必须先为context做类型检测
     static contextTypes = {
         router: PropTypes.object
     }

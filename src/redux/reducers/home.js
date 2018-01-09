@@ -1,18 +1,18 @@
-import {FOCUS} from 'actions/home';
+import {CLICK_IMG} from 'actions/home';
 
 
 
 const initState = {
-    hasFocus:false
+    text:0
 };
 
 
 
 export default function reducer(state = initState, action) {
     switch (action.type) {
-        case FOCUS:
+        case CLICK_IMG:
             return {
-                hasFocus:true
+                text:state.text++
             };
         default:
             return state

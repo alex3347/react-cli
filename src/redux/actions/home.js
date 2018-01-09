@@ -1,7 +1,13 @@
-/*action*/
+export const CLICK_IMG = "header/CLICK_IMG";
 
-export const FOCUS = "header/FOCUS";
 
-export function focus() {
-    return {type: FOCUS}
+
+function clickImgType() {
+    return {type:CLICK_IMG}
+}
+
+export function clickImg() {
+    return function(dispatch){
+        dispatch(clickImgType())
+    }
 }

@@ -8,17 +8,20 @@ import {connect} from 'react-redux';
 
 class Home extends Component {
     render() {
+        let {text} = this.props.home
         return (
             <div className={styles.container}>
                 <Link to='/SearchResult' className={styles.inputContainer}>
-                    <input type="text"  placeholder="请点击" disabled/>
+                    <input type="text"  placeholder="点击跳转页面" disabled/>
                     <i className='iconfont icon-sousuo'/>
                 </Link>
+                <img src={require('./images/noList.png')} alt=""/>
+                <div className={styles.tip}>已点击图片{text}次</div>
             </div>
         )
     }
 }
 
 export default connect((state) => ({
-    login: state.login
-}), {focus})(Home);
+    home: state.home
+}), {clickImg})(Home);

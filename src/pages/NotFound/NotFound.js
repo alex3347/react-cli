@@ -1,12 +1,11 @@
 import React, {Component} from 'react';
 
-import getRouter from 'router/router';
+export default class NotFound extends Component {
 
-export default class App extends Component {
     render() {
         return (
             <div>
-                {getRouter()}
+                404
             </div>
         )
     }

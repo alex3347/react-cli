@@ -36,7 +36,15 @@ module.exports = {
             use: [{
                 loader: 'url-loader',
                 options: {
-                    limit: 8192
+                    limit: 8192 // 限制大小8kb
+                }
+            }]
+        },{
+            test: /\.(woff|woff2|svg|ttf|eot)($|\?)/i,
+            use: [{
+                loader: 'url-loader',
+                options: {
+                    limit: 5000 // 限制大小5kb
                 }
             }]
         }]
@@ -45,7 +53,8 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({//用于加载增加了hash值的js文件到html
             filename: 'index.html',
-            template: path.join(__dirname, 'src/index.html')
+            template: path.join(__dirname, 'src/index.html'),
+            favicon: path.join(__dirname, 'src/favicon.ico')
         }),
         new webpack.optimize.CommonsChunkPlugin({//用于提取react redux等公共组件
             name: 'vendor'
