@@ -6,6 +6,9 @@ import store from './redux/store';
 import {BrowserRouter as Router} from 'react-router-dom';
 import App from 'components/App/App';
 
+import './static/css/reset.css'
+import './static/iconfont/iconfont.css'
+
 renderWithHotReload(App);
 
 /*模块热替换*/

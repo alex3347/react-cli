@@ -39,6 +39,14 @@ module.exports = {
                     limit: 8192
                 }
             }]
+        },{
+            test: /\.(woff|woff2|svg|ttf|eot)($|\?)/i,
+            use: [{
+                loader: 'url-loader',
+                options: {
+                    limit: 5000 // 限制大小5kb
+                }
+            }]
         }]
     },
     /*插件配置*/

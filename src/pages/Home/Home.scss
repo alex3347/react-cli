@@ -1,4 +1,44 @@
-.test {
-  border: 1px solid red;
-  display: flex;
+.container {
+  overflow: hidden;
+  padding:24px 20px;
+  font-size: 44px;
+  text-align: center;
+  .inputContainer{
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    color: #b0b0b0;
+    input{
+      display: inline-block;
+      width:710px;
+      height:62px;
+      background-color: #eee;
+      font-size: 28px;
+      border-radius: 8px;
+      color: #b0b0b0;
+      text-align: center;
+      vertical-align: middle;
+    }
+    input::-webkit-input-placeholder{
+      color: #333;
+    }
+    i{
+      position: absolute;
+      left:calc(50% - 160px);
+      top:12px;
+      font-size: 44px;
+    }
+  }
+  img{
+    display: block;
+    width:164px;
+    height:128px;
+    margin:200px auto 30px;
+  }
+  .tip{
+    text-align: center;
+    font-size: 32px;
+    color: #666;
+  }
 }
+
