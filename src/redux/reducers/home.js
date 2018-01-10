@@ -12,7 +12,7 @@ export default function reducer(state = initState, action) {
     switch (action.type) {
         case CLICK_IMG:
             return {
-                text:state.text++
+                text:++state.text
             };
         default:
             return state

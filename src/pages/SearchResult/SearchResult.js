@@ -8,7 +8,7 @@ export default class SearchResult extends Component {
         return (
             <div>
                 <Header/>
-                <div className={styles.title}>热门搜索</div>
+                <div className={styles.title}>点击左上角箭头返回</div>
             </div>
         )
     }

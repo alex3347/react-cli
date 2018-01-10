@@ -21,7 +21,7 @@ export default () => (
     <div>
         <Switch>
             <Route exact path="/" component={createComponent(Home)}/>
-            <Route path="/searchResult" component={createComponent(searchResult)}/>
+            <Route path="/searchResult" component={createComponent(SearchResult)}/>
             <Route component={createComponent(NotFound)}/>
         </Switch>
     </div>
