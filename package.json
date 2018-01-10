@@ -9,8 +9,8 @@
     "start": "webpack-dev-server --config webpack.dev.config.js --color --progress --hot",
     "build": "webpack --config webpack.config.js"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "alex3347",
+  "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^7.1.6",
     "autoprefixer-loader": "^3.2.0",
