@@ -39,6 +39,7 @@ $ npm install                   # Install project dependencies
 $ npm start                     # Compile and launch
 ```
 相关命令
+
 |`npm <script>`|解释|
 |------------------|-----------|
 |`start`|服务启动在3000端口，代码热替换开启。|
@@ -120,8 +121,8 @@ $ npm start                     # Compile and launch
 
 ## 静态部署
 
-如果你正在使用nginx处理程序，确保所有的路由都直接指向 `~/dist/index.html` 文件
-否则请将index.js文件中import {BrowserRouter as Router} from 'react-router-dom';改为import {HashRouter as Router} from 'react-router-dom';
+- 如果你正在使用nginx处理程序，确保所有的路由都直接指向 `~/dist/index.html` 文件
+- 否则请将index.js文件中import {BrowserRouter as Router} from 'react-router-dom';改为import {HashRouter as Router} from 'react-router-dom';(不推荐)
 
 
 ## TIPS
@@ -136,5 +137,5 @@ $ npm start                     # Compile and launch
 
 
 ## 希望
-本项目是根据react社区一些朋友分享的脚手架综合，并且实际项目运用后所得出得经验
-朋友们如果有一些对本项目得建议，或者想法欢迎issues，将持续改进
+- 本项目是根据react社区一些朋友分享的脚手架综合，并且实际项目运用后所得出得经验
+- 朋友们如果有一些对本项目得建议，或者想法欢迎issues，将持续改进
