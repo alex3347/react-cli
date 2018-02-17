@@ -41,11 +41,12 @@ $ npm install                   # Install project dependencies
 $ npm start                     # Compile and launch
 ```
 相关命令
-|`npm <script>`|解释|
-|------------------|-----------|
-|`start`|服务启动在3000端口，代码热替换开启。|
-|`run dev-build`|编译程序到dist目录下（程序会自动创建）,开发环境的打包文件，包含source-map，未开启压缩。|
-|`run build`|编译目录与`run dev-build`相同,正式的上线前打包文件。|
+
+| `npm <script>`  | 解释                                       |
+| --------------- | ---------------------------------------- |
+| `start`         | 服务启动在3000端口，代码热替换开启。                     |
+| `run dev-build` | 编译程序到dist目录下（程序会自动创建）,开发环境的打包文件，包含source-map，未开启压缩。 |
+| `run build`     | 编译目录与`run dev-build`相同,正式的上线前打包文件。       |
 
 `npm start`后，浏览器打开` http://localhost:8080/`查看效果
 
